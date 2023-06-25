@@ -1,0 +1,45 @@
+@import './_reset'
+@import './_fonts'
+body
+  background: hsl(212, 45%, 89%)
+  overflow-y: hidden
+  display: flex
+  align-items: center
+  justify-content: center
+.card
+  background: hsl(0, 0%, 100%)
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  margin: auto
+  padding-bottom: 1.5em
+  width: 50%
+  border-radius: 20px
+  .image
+    img
+      margin: 1em
+      object-fit: cover
+      width: 90%
+      height: 90%
+      border-radius: 10px
+  .card-h1
+    margin: 0.5em 2rem
+    text-align: center
+
+  .card-p
+    margin: 0.5em 1.5rem
+    text-align: center
+
+@media screen and (max-width: 600px)
+  .card
+    width: 90%
+    margin: 1em auto
+
+    .card-h1
+      margin: 0.5em 1rem
+      text-align: center
+
+    .card-p
+      margin: 0.5em 0.5rem
+      text-align: center
